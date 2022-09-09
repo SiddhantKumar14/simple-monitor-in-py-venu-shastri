@@ -9,7 +9,7 @@ def is_temp_ok(temperature):
 def is_soc_ok(soc):
   if soc > 20 or soc < 80:
     return True
-   else:
+  else:
     return False
 def is_charge_rate_ok(charge_rate):
   if charge_rate > 0.8:
