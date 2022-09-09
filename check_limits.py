@@ -12,7 +12,7 @@ def is_soc_ok(soc):
   else:
     return False
 def is_charge_rate_ok(charge_rate):
-  if charge_rate < 0.8:
+  if charge_rate < 0.8 and charge_rate > 0:
     return True
   else:
     return False
