@@ -2,12 +2,12 @@ def print_func(input):
   print(input)
   
 def is_temp_ok(temperature):
-  if temperature > 0 or temperature < 45:
+  if temperature > 0 and temperature < 45:
     return True
   else:
     return False
 def is_soc_ok(soc):
-  if soc > 20 or soc < 80:
+  if soc > 20 and soc < 80:
     return True
   else:
     return False
