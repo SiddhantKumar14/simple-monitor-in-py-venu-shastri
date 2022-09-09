@@ -21,10 +21,8 @@ def is_charge_rate_ok(charge_rate):
     return False
   
 def battery_is_ok(temperature, soc, charge_rate):
-  if (is_temp_ok(temperature) and is_soc_ok(soc) and is_charge_rate_ok(charge_rate)):
-    return True
-  else:
-    return False
+  is_temp_ok(temperature) and is_soc_ok(soc) and is_charge_rate_ok(charge_rate)
+
 
 if __name__ == '__main__':
   assert(battery_is_ok(25, 70, 0.7) is True)
